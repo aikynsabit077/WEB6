@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aikyn Sabit | My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">AS.</a>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#interests">Interests</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <button id="darkModeBtn">Dark Mode</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-text">
+                <p class="eyebrow">PERSONAL PORTFOLIO</p>
+
+                <h1 id="mainGreeting">
+                    Hello, I'm Aikyn Sabit.
+                </h1>
+
+                <h2 class="headline">
+                    IT Student
+                </h2>
+
+                <p class="intro">
+                    I am learning web development and enjoy creating
+                    websites, solving problems, watching football
+                    and listening to music.
+                </p>
+
+                <button id="updateGreetingBtn" class="main-btn">
+                    Update Greeting
+                </button>
+            </div>
+
+            <div class="hero-card">
+                <div class="avatar">AS</div>
+                <h2>Aikyn Sabit</h2>
+                <p>Student · IT-2504</p>
+                <span>Open to learning</span>
+            </div>
+
+        </section>
+
+
+        <section class="section" id="about">
+
+            <p class="eyebrow">01 / ABOUT ME</p>
+            <h2>Getting to Know Me</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>About Me</h3>
+
+                    <p>
+                        I am an IT student interested in technology
+                        and web development. I like learning new
+                        things and creating small projects.
+                    </p>
+
+                    <p id="statusMessage">
+                        Currently learning jQuery!
+                    </p>
+
+                    <button id="hideInfoBtn">Hide</button>
+                    <button id="showInfoBtn">Show</button>
+                    <button id="toggleInfoBtn">Toggle</button>
+                </div>
+
+                <div class="card">
+                    <h3>Interesting Facts</h3>
+
+                    <ul id="funFacts">
+                        <li>I enjoy playing voleyball.</li>
+                        <li>I like listening to music.</li>
+                        <li>I like watching football.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="section section-gray" id="gallery">
+
+            <p class="eyebrow">02 / MY GALLERY</p>
+            <h2>Things I Enjoy</h2>
+
+            <div class="gallery">
+
+                <div class="gallery-card">
+                    <img
+                        class="gallery-image"
+                        src="images/cooking.jpg"
+                        alt="Cooking"
+                    >
+                    <h3>Cooking</h3>
+                    <p>Cooking</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img
+                        class="gallery-image"
+                        src="images/football.jpg"
+                        alt="Football field"
+                    >
+                    <h3>Football</h3>
+                    <p>My favorite hobby</p>
+                </div>
+
+            </div>
+
+            <div class="buttons">
+                <button id="fadeInBtn">Fade In</button>
+                <button id="fadeOutBtn">Fade Out</button>
+                <button id="fadeToggleBtn">Fade Toggle</button>
+            </div>
+
+        </section>
+
+
+        <section class="section" id="interests">
+
+            <p class="eyebrow">03 / MY INTERESTS</p>
+            <h2>What I Like</h2>
+
+            <div class="accordion">
+
+                <div class="accordion-item">
+                    <h3 class="accordion-heading">
+                        My Favorite Music +
+                    </h3>
+
+                    <div class="accordion-panel">
+                        <p>
+                             It helps me relax and focus
+                            on my studies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-heading">
+                        My Favorite Movie +
+                    </h3>
+
+                    <div class="accordion-panel">
+                        <p>
+                            I like movies with interesting stories.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-heading">
+                        My Favorite Subject +
+                    </h3>
+
+                    <div class="accordion-panel">
+                        <p>
+                            I enjoy math subjects.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="buttons">
+               <button id="hidePanelsBtn">Hide All Panels</button>
+               <button id="showPanelsBtn">Show All Panels</button>
+            </div>
+
+        </section>
+
+        <section class="section section-gray" id="skills">
+
+            <p class="eyebrow">04 / MY TECHNICAL SKILLS</p>
+            <h2>My Skills</h2>
+
+            <div class="card">
+
+                <h3>Technical Skills List</h3>
+
+                <ul id="skillsList">
+                    <li>HTML</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Vibecoding</li>
+                </ul>
+
+                <input
+                    type="text"
+                    id="newSkillInput"
+                    placeholder="Enter a new skill"
+                >
+
+                <div class="buttons">
+                    <button id="appendSkillBtn">Add Skill</button>
+                    <button id="prependSkillBtn">Prepend Skill</button>
+                    <button id="removeSkillBtn">Remove Skill</button>
+                </div>
+
+                <p id="skillFeedback"></p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>My Skill Levels</h3>
+
+                <div class="skill">
+                    <p>HTML - 85%</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-width="85"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <p>CSS - 70%</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-width="70"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <p>JavaScript - 55%</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-width="55"></div>
+                    </div>
+                </div>
+
+                <button id="animateSkillsBtn" class="main-btn">
+                    Animate
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="section" id="contact">
+
+            <p class="eyebrow">05 / CONTACT</p>
+            <h2>Let's Connect</h2>
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <h3>My Social Media</h3>
+
+                    <p>Find me on GitHub or LinkedIn.</p>
+
+                    <a
+                        id="socialLink"
+                        href="https://github.com/aikynsabit077"
+                        target="_blank"
+                    >
+                        GitHub Profile
+                    </a>
+
+                    <br><br>
+
+                    <button id="changeLinkBtn">
+                        Change Link
+                    </button>
+
+                    <p id="linkFeedback"></p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>Live Form Preview</h3>
+
+                    <form id="contactForm">
+
+                        <label for="visitorName">Name</label>
+
+                        <input
+                            type="text"
+                            id="visitorName"
+                            placeholder="Enter your name"
+                        >
+
+                        <label for="visitorEmail">Email</label>
+
+                        <input
+                            type="email"
+                            id="visitorEmail"
+                            placeholder="Enter your email"
+                        >
+
+                    </form>
+
+                    <div class="preview">
+
+                        <h4>Your Information:</h4>
+
+                        <p id="namePreview">Name: —</p>
+                        <p id="emailPreview">Email: —</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Aikyn Sabit</p>
+    </footer>
+
+</body>
+</html>
