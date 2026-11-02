@@ -63,4 +63,4 @@ During this assignment, I learned how to use jQuery for selecting elements, chan
 
 ## Link to Website
 
-[GitHub Pages](PASTE_YOUR_GITHUB_PAGES_LINK_HERE)
+(https://aikynsabit077.github.io/WEB6/)
